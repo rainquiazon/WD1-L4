@@ -1,0 +1,172 @@
+
+/* for a more cleaner look */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* navigation barrrrrr */
+.navbar {
+  background-color: #5a3825; /* Woody color theme */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; /* Space sa gitna ng logo at links */
+  align-items: center;
+}
+
+/* Para sa list ng mga nav links (Home, Product, About, Contact Us) */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+/* space between klinks */
+.nav-links li {
+  margin-left: 20px;
+}
+
+/* for a more good looking texts, and controlable */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* may underline effect */
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/*  body */
+.main-container {
+  display: flex;
+  background-color: #f3e5d0; 
+  min-height: 80vh; /* 80% ng height ng screen */
+}
+
+
+
+.content {
+  width: 80%; /* 20% mapupunta sa cart */
+  padding: 20px;
+}
+
+
+/* row 1 use a flexxx*/
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+
+/* used of grid */
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 122px; /* para matapat ko each sa raw 1 verticaly */
+}
+
+
+/* Basic design ng product box */
+.card {
+  background-color: white;
+  border: 1px solid #c9b79c;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Para fit yung image sa card pero di stretched */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* name ng product */
+.card h3 {
+  margin-top: 10px;
+  color: #5a3825;
+}
+
+/* price ng product */
+.card p {
+  color: #7a573e;
+  margin: 5px 0;
+}
+
+/* Button “Add to Cart” */
+.card button {
+  background-color: #a17448;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect  */
+.card button:hover {
+  background-color: #7a573e;
+}
+
+
+/* the 20% and the calculation things */
+.cart {
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  border-left: 2px solid #a17448;
+}
+
+/* Title ng cart */
+.cart h2 {
+  color: #5a3825;
+  margin-bottom: 10px;
+}
+
+/* Box ng cart content */
+.cart-content {
+  background-color: #f9f1e3;
+  padding: 10px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+/* Total section sa baba ng cart */
+.cart-total {
+  text-align: center;
+}
+
+/* Button ng total or checkout */
+.cart-total button {
+  background-color: #a17448;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect para consistent */
+.cart-total button:hover {
+  background-color: #7a573e;
+}
+
+
+
+footer {
+  background-color: #5a3825;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
